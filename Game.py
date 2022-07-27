@@ -4,7 +4,6 @@ def Exibe_Menu():
     print('*************RPG GAME*************')
     print('1- Começar o Jogo')
     print('2- Ver status do seu personagem')
-    print('3- Ver Fila de monstro')
     print('S- Sair')
     print('Selecione uma opção')
 def GameStart(hero,monsters):
@@ -38,10 +37,7 @@ while sair == False:
             break
         case '2':
             hero.ShowHero()
-        case '3':
-            for i in monsters:
-                i.ShowMonster()
-            input('Aperte Enter para sair')
+
         case 's':
            sair = True
            print('Saindo...')
